@@ -8,9 +8,9 @@ Profile pictures, small icons, and UI assets still load. Stories and in-app dial
 
 | File | Platform | Site |
 | --- | --- | --- |
-| [`instagram-detox-reworked.js`](instagram-detox-reworked.js) | Desktop (Tampermonkey) | [instagram.com](https://www.instagram.com/) |
+| [`instagram-detox-reworked.js`](instagram-detox-reworked.js) | Desktop (Tampermonkey) | instagram.com |
 | [`ios/instagram-detox-reworked-ios.js`](ios/instagram-detox-reworked-ios.js) | iPhone Safari + Tampermonkey | Instagram |
-| [`threads-detox.js`](threads-detox.js) | Desktop (Tampermonkey) | [threads.com](https://www.threads.com/) / [threads.net](https://www.threads.net/) |
+| [`threads-detox.js`](threads-detox.js) | Desktop (Tampermonkey) | threads.com / threads.net |
 | [`ios/threads-detox-ios.js`](ios/threads-detox-ios.js) | iPhone Safari + Tampermonkey | Threads |
 
 Do **not** run more than one Instagram script at a time, and do **not** run both Threads desktop and iOS scripts in the same browser. They hook the same `fetch` / media APIs and will fight each other.
