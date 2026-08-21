@@ -1,0 +1,9 @@
+{
+  "name": "digital-detox",
+  "private": true,
+  "license": "MIT",
+  "description": "Instagram / Threads digital-detox userscripts",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
