@@ -1,6 +1,5 @@
 # digital-detox
 
-## Introduction:
 Userscripts that stop Instagram and Threads from auto-downloading post photos and videos. Media stays locked until you tap it (or use **Load visible media**).
 
 Profile pictures, small icons, and UI assets still load. Stories and in-app dialogs / lightboxes are left alone by default.
