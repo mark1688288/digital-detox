@@ -1,8 +1,29 @@
 # digital-detox
 
+## Introduction:
 Userscripts that stop Instagram and Threads from auto-downloading post photos and videos. Media stays locked until you tap it (or use **Load visible media**).
 
 Profile pictures, small icons, and UI assets still load. Stories and in-app dialogs / lightboxes are left alone by default.
+
+## The Scientific & Legal Context
+
+Modern social media platforms are not neutral utilities; they are intentionally engineered to induce behavioral addiction. This is not merely a theoretical claim—it is now a matter of documented legal and scientific record:
+* **The Legal Precedent**: In landmark lawsuits such as the multi-state action against Meta (e.g., *Case 4:23-cv-05448* filed by dozens of U.S. Attorneys General [[1](#references)]) and the historic *K.G.M. v. Meta* bellwether trial [[2](#references)], courts have focused strictly on **"defective product design choices"** rather than the content itself [[2](#references)]. Features like infinite scrolling and algorithmic recommendations are legally challenged as intentionally addictive design architecture [[2](#references)].
+* **The Slot Machine Effect**: Platforms exploit **Variable Reward Schedules**—the exact same psychological mechanism that makes slot machines addictive. When you pull to refresh or scroll down, you do not know if the next piece of content will be dull or highly stimulating. This unpredictability triggers a burst of **dopamine** (the brain's anticipation-of-reward chemical) before the content even loads, locking you into a compulsive "feedback loop" of infinite scrolling.
+
+## How This Tool Reverses the Addiction Loop
+
+This JavaScript tool intervenes directly at the point of data interaction, reversing the platform's exploitative design through two main technical interventions:
+
+### 1. From Passive "Push" to Conscious "Pull"
+* **The Platform's Design**: Social media uses **infinite scrolling** and **lazy-loading** to seamlessly stream media into your eyes, eliminating all natural "stopping cues" [[1](#references)]. **Autoplay** forces sensory stimulation onto your brain before you can consciously choose to look away [[1](#references)].
+* **Our Intervention**: The script intercepts lazy-loading images and completely disables video autoplay.
+* **The Result**: Media is no longer "pushed" to you. To view an image or watch a video, you must **actively and consciously click to load** that specific piece of media. 
+
+### 2. Introducing "Cognitive Friction"
+* **System 1 vs. System 2 Thinking**: Fast, compulsive social media browsing relies on **System 1** (automatic, low-effort, subconscious) thinking.
+* **Our Intervention**: By requiring an explicit click to load each image or video, this script injects **cognitive friction**—a brief, intentional delay.
+* **The Result**: This pause disrupts the automatic reflex loop. It forces your brain to engage **System 2** (reflective, analytical, high-effort) thinking. The brief moment of friction gives your prefrontal cortex the critical window of time it needs to ask: *"Do I actually want to spend my attention on this?"*
 
 ## Scripts
 
@@ -64,3 +85,10 @@ npm test
 ```
 
 Harvest / URL helpers in `instagram-detox-reworked.js` also run under Node (`createHarvest`). MIT licensed — see [LICENSE](LICENSE).
+
+## References
+
+The scientific and legal claims cited in this document are grounded in official court filings and documented public reports:
+
+* **[1] Case 4:23-cv-05448 (US District Court, N.D. California)**: *Complaint for Injunctive and Other Relief* filed by the State Attorneys General on October 24, 2023. Hosted on California Department of Justice ([CA.gov](https://oag.ca.gov)). View the official news coverage of the filing on [The Guardian](https://www.theguardian.com/technology/2023/nov/27/meta-instagram-facebook-kids-addicted-lawsuit).
+* **[2] K.G.M. v. Meta et al.**: The historic bellwether case where a jury awarded $6M over negligent product design. Read the details on [Wikipedia](https://en.wikipedia.org/wiki/K.G.M._v._Meta_et_al.).
