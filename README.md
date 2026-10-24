@@ -93,6 +93,10 @@ npm test
 
 Harvest / URL helpers in `instagram-detox-reworked.js` also run under Node (`createHarvest`). MIT licensed — see [LICENSE](LICENSE).
 
+## Demo
+
+![workflow](imgs/demo.gif)
+
 ## References
 
 The scientific and legal claims cited in this document are grounded in official court filings and documented public reports:
