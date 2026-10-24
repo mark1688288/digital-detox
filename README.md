@@ -95,7 +95,9 @@ Harvest / URL helpers in `instagram-detox-reworked.js` also run under Node (`cre
 
 ## Demo
 
-![workflow](imgs/demo.gif)
+<p align="center">
+  <img src="imgs/demo.gif" alt="workflow" />
+</p>
 
 ## References
 
